@@ -1,6 +1,6 @@
 My First Website - CV Showcase
-![image](https://github.com/Trybor/my-first-website/assets/138491596/42f2e2b0-0862-4824-b7a8-c4e2ef3fff7b)
 
+![mywebsite](https://github.com/Trybor/my-first-website/assets/138491596/4c05c1f5-5c9e-46bc-98ee-c8ac916ce57f)
 
 
 Welcome to the repository for my very first website! 
