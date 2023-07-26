@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my personal Website</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header ================================================== -->
+<header id="home">
+
+        <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="hide navigation">Hide navigation</a>
+
+            <ul id="nav" class="nav">
+                <li class="current"><a class="smoothscroll" href="#home">home</a></li>
+                <li><a class="smoothscroll" href="#about_me">about me</a></li>
+                <li><a class="smoothscroll" href="#work_experience">work experience</a></li>
+                <li><a class="smoothscroll" href="#education">education</a></li>
+                <li><a class="smoothscroll" href="#get_in_touch">get in touch</a></li>
+            </ul> <!-- end #nav -->
+        </nav>
+        <div class="row banner">
+            <div class="banner-text">
+                <h1 class="responsive-headline">Tibor Gebhartl</h1>
+                <h2>soon...<br>Front-End Developer</h2>
+            </div>
+            <ul class="social">
+                <li><a href="#"><i class="instagram"></i>instagram</a></li>
+                <li><a href="#"><i class="linkedin"></i>linkedin</a></li>
+                <li><a href="#"><i class="github"></i>github</a></li>
+            </ul>
+        </div>
+    </header> <!-- Header End -->
+
+    <!-- Main ================================================== -->
+<main>
+        <!-- Home Section ================================================== -->
+        <section id="title">
+            <img class="me" src="pictures/Me.JPG" alt="picture of me">
+            <div class="columns download">
+                <p>
+                    <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                    <a href="#" class="button"><i class="fa fa-download"></i>Contact Me</a>
+                </p>
+            </div>
+        </section> <!-- Home End -->
+
+        <section id="about_me"> <!-- About Section ================================================== -->
+            <div class="row">
+                <div class="columns text-col">
+                    <h2>about me</h2>
+                    <hr class="separator">
+                    <p>Enjoy working closely with team members to ensure workloads are effectively redirected to
+                        bottlenecks and personally picking up the slack when necessary. With a passion for both personal
+                        growth and for software development, Ready to apply my passion for coding to a talented
+                        engineering team to develop quality solutions.</p>
+                </div>
+                <h2>great things coming soon...</h2>
+                <img src="pictures/skills.png" alt="pcitures of my skillset">
+            </div>
+        </section> <!-- About End -->
+
+        <section id="work_experience"> <!-- Work experience section -->
+            <div class="row">
+                <div class="columns text-col">
+                    <h2>work experience</h2>
+                    <hr class="separator">
+
+                    <div class="three columns">
+                        <p class="years"> Sep 2021 - today</p>
+                        <p class="experience">PMS Interface Installer <br>
+                        <p class="company">hotelkit</p>
+                        </p>
+                        <p class="details">Currently, I am engaged in project management for API connections. I am
+                            overseeing the installation of PMS (Property Management System) into the hotelkit software.
+                            Moreover, I am responsible for maintaining and supporting the API systems, and actively
+                            handling bug tracking and reporting.</p>
+                        <hr class="small-separator">
+                        <p class="years">Jan 2019 - Sep 2021</p>
+                        <p class="experience">Graphicdesigner<br>
+                        <p class="company">hello again</p>
+                        </p>
+                        <p class="details">I specialized in creating graphic and print media for small and medium-sized
+                            companies. I managed the project for the APP launch. I implemented the design, layout, and
+                            content of the APP to ensure a smooth user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!--  Work experience End -->
+
+        <section id="education"> <!-- education section -->
+            <div class="row">
+                <div class="columns text-col">
+                    <h2>education</h2>
+                    <hr class="separator">
+
+                    <div class="three columns">
+                        <p class="years"> Jan 2019 Sep 2021</p>
+                        <p class="experience">Apprenticeship as graphic designer<br>
+                        <p class="company">hello again</p>
+                        </p>
+                        <p class="details">Media specialist - graphics, print, publishing and
+                            audiovisual media.</p>
+                        <hr class="small-separator">
+                        <p class="years">2013 - 2017</p>
+                        <p class="experience">Upper school for communication and media studies<br>
+                        <p class="company">Softwarepark Hagenberg, Upper Austria</p>
+                        </p>
+                        <p class="details">The Upper School for Communication and Media Studies fosters future leaders
+                            in media and communication through innovative curriculum and hands-on experiences, preparing
+                            students for success in journalism, broadcasting, digital media, and related fields.</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!--  education End -->
+
+        <section id="get_in_touch">
+            <div class="row">
+                <h2>get in touch</h2>
+                <hr class="separator">
+                    <div class="title">
+                        <h2 id="contact">contact <h2 id="me">me</h2><p id="small-text">let's get in touch</p></h2>
+                    </div>
+
+                <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+                <fieldset>
+
+              <div>
+                       <label for="contactName">Name <span class="required">*</span></label>
+                       <input type="text" value="" size="35" id="contactName" name="contactName">
+              </div>
+
+              <div>
+                       <label for="contactEmail">Email <span class="required">*</span></label>
+                       <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+              </div>
+
+              <div>
+                       <label for="contactSubject">Subject</label>
+                       <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+              </div>
+
+              <div>
+                 <label for="contactMessage">Message <span class="required">*</span></label>
+                 <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+              </div>
+
+              <div>
+                 <button class="submit">Submit</button>
+                 <span id="image-loader">
+                    <img alt="" src="pictures/loader.gif">
+                 </span>
+              </div>
+
+                </fieldset>
+               </form> <!-- Form End -->
+           
+                <!-- contact-warning -->
+                <div id="message-warning">Error!</div>
+                <!-- contact-success -->
+                <div id="message-success">
+                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            </div>
+        </div>
+        </section>
+</main> <!-- Main End -->
+
+    <!-- footer
+   ================================================== -->
+<footer>
+    <div class="row">
+          <ul class="social-links">
+             <li><a href="#"><i class="instagram"></i></a>instagram</li>
+             <li><a href="#"><i class="linkedin"></i></a>linkedin</li>
+             <li><a href="#"><i class="github"></i></a>github</li>
+          </ul>
+
+          <ul class="copyright">
+             <li>&copy; Copyright 2023</li>
+             <li>Design by Tibor Gebhartl</li>   
+          </ul>
+    </div>
+    <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i>title</a>
+    </div>
+ </footer> <!-- Footer End-->
+
+</body>
+
+</html>
