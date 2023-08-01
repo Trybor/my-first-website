@@ -24,12 +24,17 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  width: auto;
   gap: 40px;
 }
 #nav-wrap a:hover {
-  opacity: 0.7;
   cursor: pointer;
+  font-weight: bold;
+  transition: all .5s;
+  letter-spacing: 2px;
+  font-optical-sizing: auto;
+  color: white !important;
+  border-radius: 100px;
+  gap: 40px;
 }
 #nav-wrap {
   font: 12px;
@@ -50,18 +55,25 @@ ul#nav.nav{
 }
 
 /* home */
-header#home{
+header#home, main{
   display: flex;
-  justify-content: space-evenly;
+  flex: 1;
+  justify-content: space-between;
   padding-top: 100px;
   padding-bottom: 60px;
   margin: 0 200px;
+}
+main{
+  flex-direction: column;
 }
 h1{
   display: flex;
   color: white;
 }
 div.row.banner{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   font-size: 30px;
   color: black;
   padding: 10px;
@@ -85,25 +97,34 @@ div.row.banner{
 a.button{
   display: flex;
   font-size: 20px;
-  color: black;
+  color: black !important;
   padding: 10px;
-  border: 3px solid #fafafa;
+  border: 1px solid #fafafa;
   border-radius: 100px;
   background: white;
   justify-content: center;
-  text-decoration: none;
-}
-a.button:hover{
-  opacity: 0.7;
-  cursor: pointer;
+  text-decoration: none !important;
 }
 
-/* right side icons */
+a.button:hover{
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all .5s;
+  background-color: hsl(235, 57%, 12%);
+  font-optical-sizing: auto;
+  color: white !important;
+}
+
+/* home - right side icons */
 ul.social{
   display: flex;
   justify-content: space-evenly;
   margin: 10px;
   padding: 0;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
 }
 .header-links{
   display: flex;
@@ -119,16 +140,63 @@ ul.social{
 .fa {
   padding: 20px;
   width: 50px;
-  height: 10px;
-  text-align: center;
-  text-decoration: none;
+  height: 11px;
+  color:  black !important;
+  text-decoration: none !important;
   margin: 10px 10px;
   border-radius: 100px;
 }
 .fa:hover {
   opacity: 0.7;
   cursor: pointer;
+  transition: all .5s;
+  background-color: hsla(222, 59%, 61%, 0.915);
+  color: white !important;
 }
 .fa-facebook,.fa-github, .fa-linkedin{
 background: #ffffff;
+padding-top: 10px;
+}
+
+/* about me */
+section#about_me{
+  display: flex;
+  flex: 1;
+  justify-content:space-evenly;
+}
+h2{
+  border-bottom: 2px solid;
+  margin: 30px 0 10px 0;
+}
+h3{
+  text-align: center;
+  margin: 40px 0;
+  color: gray;
+  font-size:xx-large;
+}
+.technology {
+  margin: 30px 0 10px 0;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.technology img {
+  max-width: 100%;
+  height: auto;
+}
+.laptop {
+  position: absolute;
+  display: flex;
+  flex: auto;
+  z-index: -1;
+  right: 10em;
+  top: 45em;
+}
+@media (max-width: 1500px) {
+  .technology {
+    flex-direction: column; /* Change the flex direction to stack items vertically */
+    align-items: center; /* Center items horizontally when stacked */
+    gap: 60px;
+  }
 }
