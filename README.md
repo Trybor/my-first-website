@@ -1,6 +1,7 @@
 My First Website - CV Showcase
 
 WORK IN PROGRESS ---> Design created using Figma!
+
 Check out the website progress here: https://main--jocular-nasturtium-321f97.netlify.app/
 ![mywebsite](https://github.com/Trybor/my-first-website/assets/138491596/4c05c1f5-5c9e-46bc-98ee-c8ac916ce57f)
 
