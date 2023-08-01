@@ -1,3 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
 body {
-    background: #7e92bb; 
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #00050f;
+}
+
+/* navigation */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  width: auto;
+  gap: 40px;
+}
+#nav-wrap a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#nav-wrap {
+  font: 12px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+ul#nav.nav{
+  background-color: #00050f;
+  display: flex;
+  align-items: center;
+}
+
+/* home */
+header#home{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  margin: 0 200px;
+}
+h1{
+  display: flex;
+  color: white;
+}
+div.row.banner{
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+}
+#job{
+  color: gray;
+}
+.me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  border: 0px solid;
+  border-radius: 100px;
+}
+.columns-download>p{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+a.button{
+  display: flex;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  border: 3px solid #fafafa;
+  border-radius: 100px;
+  background: white;
+  justify-content: center;
+  text-decoration: none;
+}
+a.button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* right side icons */
+ul.social{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 0;
+}
+.header-links{
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 100px;
+  color: white;
+  background-color: white;
+  justify-content: center;
+}
+.fa {
+  padding: 20px;
+  width: 50px;
+  height: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px;
+  border-radius: 100px;
+}
+.fa:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.fa-facebook,.fa-github, .fa-linkedin{
+background: #ffffff;
 }
