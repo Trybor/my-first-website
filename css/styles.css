@@ -46,10 +46,11 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  transition: top 0.3s ease; /*scrolling effect*/
 }
 
 ul#nav.nav{
-  background-color: #00050f;
+  background-color: #0D102F;
   display: flex;
   align-items: center;
 }
@@ -143,7 +144,7 @@ ul.social{
   height: 11px;
   color:  black !important;
   text-decoration: none !important;
-  margin: 10px 10px;
+  margin: 10px;
   border-radius: 100px;
 }
 .fa:hover {
@@ -191,12 +192,62 @@ h3{
   flex: auto;
   z-index: -1;
   right: 10em;
-  top: 45em;
+  top: 40em;
 }
+
+/* work-experience */
+
+.three-columns{
+  display: flex;
+  flex: 1 auto;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.three-columns-border{
+border-bottom: 1px solid;
+margin: auto;
+border-color: grey;
+margin: 20px 0;
+padding-bottom: 20px;
+}
+.years{
+display: flex;
+width: 243px;
+height: aut;
+flex-shrink: 0;
+}
+p.experience{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  flex-shrink: 0;
+}
+.details{
+  display: flex;
+  width: 791px;
+  height: auto;
+}
+
+.company{
+  display: inline;
+  color: #6184D6;
+}
+
+
+
+
+
 @media (max-width: 1500px) {
-  .technology {
-    flex-direction: column; /* Change the flex direction to stack items vertically */
-    align-items: center; /* Center items horizontally when stacked */
+  .technology{
+    flex-direction: column;
+    align-items: center; 
     gap: 60px;
+  }
+  .three-columns {
+    flex-direction: column;
+  }
+  .columns-text-co{
+    flex-basis: 100%;
+    margin-bottom: 20px;
   }
 }
