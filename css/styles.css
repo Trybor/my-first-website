@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #00050f;
+  transition: all .5s;
 }
 
 /* navigation */
@@ -61,7 +62,6 @@ header#home, main{
   flex: 1;
   justify-content: space-between;
   padding-top: 100px;
-  padding-bottom: 60px;
   margin: 0 200px;
 }
 main{
@@ -86,7 +86,7 @@ div.row.banner{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 650px;
+  max-width: 850px;
   border: 0px solid;
   border-radius: 100px;
 }
@@ -94,6 +94,9 @@ div.row.banner{
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.columns-text-col{
+  padding-top: 100px;
 }
 a.button{
   display: flex;
@@ -195,7 +198,7 @@ h3{
   top: 40em;
 }
 
-/* work-experience */
+/* work-experience & education */
 
 .three-columns{
   display: flex;
@@ -233,9 +236,55 @@ p.experience{
   color: #6184D6;
 }
 
+/* form  */
 
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
+}
 
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 1px;
+}
 
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input {
+  width: 650px;
+  max-width: 100%;
+  margin: 0 200px;
+}
+
+.submit{
+  display: inline-block;
+  float: center;
+  color: white;
+  font-size: 25px;
+  color: black !important;
+  padding: 15px;
+  border: 1px solid #fafafa;
+  border-radius: 100px;
+  background: white;
+}
+button.submit:hover{
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all .5s;
+  background-color: hsl(235, 57%, 12%);
+  color: white !important;
+}
+
+/* responsive design */
 
 @media (max-width: 1500px) {
   .technology{
