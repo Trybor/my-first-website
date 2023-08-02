@@ -13,6 +13,7 @@ window.onscroll = function() {
 };
 
 //  // Show the success message
-function showSuccessMessage() {
+function showSuccessMessage(event) {
+  event.preventDefault();
   document.getElementById('success-message').style.display = 'block';
 }
