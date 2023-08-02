@@ -16,4 +16,5 @@ window.onscroll = function() {
 function showSuccessMessage(event) {
   event.preventDefault();
   document.getElementById('success-message').style.display = 'block';
+  document.getElementById('myform').style.display = 'none';
 }
