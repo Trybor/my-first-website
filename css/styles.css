@@ -269,9 +269,9 @@ textarea {
   border-radius: 1px;
 }
 
-textarea {
+#contactMessage {
   width: 100%;
-  min-height: 15em;
+  height: 200px;
 }
 
 .input {
@@ -287,6 +287,7 @@ textarea {
   font-size: 25px;
   color: black !important;
   padding: 15px;
+  margin: 15px 0;
   border: 1px solid #fafafa;
   border-radius: 100px;
   background: white;
