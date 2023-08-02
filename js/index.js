@@ -12,9 +12,7 @@ window.onscroll = function() {
   prevScrollPos = currentScrollPos;
 };
 
-//email form
-document.querySelector('#contactForm').addEventListener('submit', function(e) {
-    e.preventDefault(); 
-    alert('Your message has been sent!');
-    this.reset(); 
-});
+//  // Show the success message
+function showSuccessMessage() {
+  document.getElementById('success-message').style.display = 'block';
+}

@@ -129,7 +129,7 @@
                     <h3 id="contact"></h3>
                 </div>
                 <!-- form -->
-                <form name="Tibors-website-form" action="/" method="POST" data-netlify="true" netlify>
+                <form name="Tibors-website-form" action="/" method="POST" data-netlify="true" onsubmit="showSuccessMessage()" netlify>
                     <fieldset>
                         <div>
                             <label for="contactName">Name <span class="required">*</span></label>
@@ -156,7 +156,9 @@
                         </div>
                     </fieldset>
                 </form>
-
+                <div id="success-message" style="display: none;">
+                    Thank you! Your form has been submitted successfully.
+                  </div>
                 <!-- Form End -->
             </div>
         </section>
