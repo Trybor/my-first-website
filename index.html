@@ -36,14 +36,13 @@
             <div class="columns-download">
                 <p>
                     <a href="#" class="button">Download Resume</a>
-                    <a href="#" class="button">Contact Me</a>
                 </p>
             </div>
         </div>
         <!-- Home Section ================================================== -->
         <section id="title">
             <ul class="social">
-                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-github"></a>
                 <a href="#" class="fa fa-linkedin"></a>
             </ul>
@@ -85,12 +84,13 @@
                             overseeing the installation of PMS (Property Management System) into the hotelkit software.
                             Moreover, I am responsible for maintaining and supporting the API systems, and actively
                             handling bug tracking and reporting.</p>
-                    </div>
+                        </p>
+                        </div>
                     <div class="three-columns">
                         <p class="years">Jan 2019 - Sep 2021</p><br>
-              
+
                         <p class="experience">Graphicdesigner <span class="company">hello again</span></p>
-       
+
                         <p class="details">I specialized in creating graphic and print media for small and medium-sized
                             companies. I managed the project for the APP launch. I implemented the design, layout, and
                             content of the APP to ensure a smooth user experience.</p>
@@ -105,12 +105,14 @@
                     <h2>education</h2>
                     <div class="three-columns three-columns-border">
                         <p class="years"> Jan 2019 - Sep 2021</p> <br>
-                        <p class="experience">Apprenticeship as graphic designer<span class="company">hello again</span></p> <br>
+                        <p class="experience">Apprenticeship as graphic designer<span class="company">hello again</span>
+                        </p> <br>
                         <p class="details">Media specialist - graphics, print, publishing and audiovisual media.</p>
                     </div>
                     <div class="three-columns">
                         <p class="years">2013 - 2017</p><br>
-                        <p class="experience">Upper school for communication and media studies<span class="company">Softwarepark Hagenberg, Upper Austria</span></p><br>
+                        <p class="experience">Upper school for communication and media studies<span
+                                class="company">Softwarepark Hagenberg, Upper Austria</span></p><br>
                         <p class="details">The Upper School for Communication and Media Studies fosters future leaders
                             in media and communication through innovative curriculum and hands-on experiences, preparing
                             students for success in journalism, broadcasting, digital media, and related fields.</p>
@@ -127,45 +129,35 @@
                     <h3 id="contact"></h3>
                 </div>
                 <!-- form -->
-                <form action="" method="post" id="contactForm" name="contactForm">
+                <form action="#" id="contactForm">
                     <fieldset>
 
                         <div>
                             <label for="contactName">Name <span class="required">*</span></label>
-                            <input type="text" value="" size="35" id="contactName" name="contactName">
+                            <input type="text" id="contactName" required>
                         </div>
 
                         <div>
                             <label for="contactEmail">Email <span class="required">*</span></label>
-                            <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                            <input type="text" id="contactEmail" required>
                         </div>
 
                         <div>
-                            <label for="contactSubject">Subject</label>
-                            <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                            <label for="contactSubject">Subject<span class="required">*</span></label>
+                            <input type="text" id="contactSubject" required>
                         </div>
 
                         <div>
                             <label for="contactMessage">Message <span class="required">*</span></label>
-                            <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                            <textarea cols="50" rows="15" id="contactMessage" required></textarea>
                         </div>
 
                         <div>
                             <button class="submit">Submit</button>
-                            <span id="image-loader">
-                                <img alt="" src="pictures/loader.gif">
-                            </span>
                         </div>
 
                     </fieldset>
                 </form> <!-- Form End -->
-
-                <!-- contact-warning -->
-                <div id="message-warning">Error!</div>
-                <!-- contact-success -->
-                <div id="message-success">
-                    <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-                </div>
             </div>
         </section>
     </main> <!-- Main End -->
@@ -173,16 +165,13 @@
     <!-- footer
    ================================================== -->
     <footer>
-        <div class="row">
-            <ul class="copyright">
-                <li>&copy; Copyright 2023</li>
-                <li>Design by Tibor Gebhartl</li>
-            </ul>
-        </div>
-        <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i>title</a>
-        </div>
+        <ul class="copyright">
+            <li>&copy; Copyright 2023</li>
+            <li>Design by Tibor Gebhartl</li>
+        </ul>
     </footer> <!-- Footer End-->
     <script src="js/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

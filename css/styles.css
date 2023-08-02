@@ -11,8 +11,9 @@ body {
   flex-direction: column;
   background-color: #00050f;
   transition: all .5s;
+  word-spacing: 3px;
+  font-size: 20px;
 }
-
 /* navigation */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
   margin: 0;
@@ -27,6 +28,10 @@ body {
   min-height: 48px;
   gap: 40px;
 }
+#nav-wrap a {
+  font-weight: normal;
+  transition: all .5s;
+}
 #nav-wrap a:hover {
   cursor: pointer;
   font-weight: bold;
@@ -35,10 +40,8 @@ body {
   font-optical-sizing: auto;
   color: white !important;
   border-radius: 100px;
-  gap: 40px;
 }
 #nav-wrap {
-  font: 12px;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -47,13 +50,10 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  transition: top 0.3s ease; /*scrolling effect*/
+  transition: top 0.8s ease;
 }
-
 ul#nav.nav{
   background-color: #0D102F;
-  display: flex;
-  align-items: center;
 }
 
 /* home */
@@ -150,16 +150,30 @@ ul.social{
   margin: 10px;
   border-radius: 100px;
 }
-.fa:hover {
-  opacity: 0.7;
-  cursor: pointer;
-  transition: all .5s;
-  background-color: hsla(222, 59%, 61%, 0.915);
-  color: white !important;
-}
-.fa-facebook,.fa-github, .fa-linkedin{
+
+.fa-instagram,.fa-github, .fa-linkedin{
 background: #ffffff;
 padding-top: 10px;
+}
+
+.fa-instagram:hover {
+  cursor: pointer;
+  color: white !important;
+  transition: all .5s;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-github:hover {
+  cursor: pointer;
+  transition: all .5s;
+  background-color: hsla(220, 7%, 24%, 0.915);
+  color: white !important;
+}
+.fa-linkedin:hover {
+  cursor: pointer;
+  transition: all .5s;
+  background-color: hsla(201, 98%, 35%, 0.915);
+  color: white !important;
 }
 
 /* about me */
@@ -229,6 +243,8 @@ p.experience{
   display: flex;
   width: 791px;
   height: auto;
+ 
+
 }
 
 .company{
@@ -283,6 +299,28 @@ button.submit:hover{
   background-color: hsl(235, 57%, 12%);
   color: white !important;
 }
+
+
+/* footer */
+
+footer{
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 0;
+  bottom: 0;
+  display: flex;
+  transition: top 0.8s ease;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D102F;
+}
+.copyright{
+  list-style-type: none;
+}
+
+
 
 /* responsive design */
 

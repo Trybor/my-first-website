@@ -11,3 +11,16 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 };
+
+//email form
+
+const contactName = document.getElementById("contactName");
+const contactEmail = document.getElementById("contactEmail");
+const contactSubject = document.getElementById("contactSubject");
+const contactMessage = document.getElementById("contactMessage");
+const submit = document.getElementById("contactForm")[0];
+
+submit.addEventListener("submit", (e)=>{
+  e.preventDefault();
+  console.log("Submited!")
+})
