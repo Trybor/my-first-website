@@ -329,18 +329,43 @@ footer{
 
 
 /* responsive design */
-
 @media (max-width: 1500px) {
-  .technology, body{
+  .me,
+  .three-columns,
+  .technology,
+  .experience,
+  .laptop,
+  header#home,
+  .columns-text-col,
+  .body,
+  .div,
+  button,
+  .three-columns-border,
+  section{
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center; 
-    gap: 60px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
   }
-  .three-columns {
-    flex-direction: column;
+  p, footer{
+    font-size: small;
   }
-  .columns-text-co{
-    flex-basis: 100%;
-    margin-bottom: 20px;
+  main{
+    padding: 10px;
+    margin: 0;
+  }
+  h1, h2, h3{
+    font-size:100%;
+  }
+ #nav-wrap, .laptop {
+   display: none;
+ }
+ .technology {
+  display: flex;
+  gap: 60px;
   }
 }
