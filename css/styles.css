@@ -220,8 +220,8 @@ h3{
 
 .three-columns {
   display: flex;
-  flex-direction: row; /* Change 'column' to 'row' */
-  justify-content: space-evenly; /* Add this line */
+  flex-direction: row;
+  justify-content: space-evenly;
   gap: 15px;
   margin: 30px 0;
 }
