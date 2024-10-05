@@ -138,8 +138,8 @@ a.button:hover {
   cursor: pointer;
   font-weight: bold;
   letter-spacing: 2px;
-  transition: all .5s;
-  background-color: hsl(235, 57%, 12%);
+  transition: ease-in-out 0.5s;
+  background-color: hsl(17, 57%, 43%);
   font-optical-sizing: auto;
   color: white !important;
 }
@@ -212,10 +212,8 @@ ul.social {
   flex: 0;
   justify-content: space-between;
 }
-
-h2 {
-  border-bottom: 2px solid;
-  margin: 30px 0 10px 0;
+.uni-link{
+  color: coral;
 }
 
 h3 {
@@ -244,7 +242,7 @@ h3 {
   flex: auto;
   z-index: -1;
   right: 10em;
-  top: 30em;
+  top: 38em;
 }
 
 /* work-experience & education */
@@ -252,7 +250,7 @@ h3 {
 .three-columns {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  align-items: flex-start;
   gap: 15px;
   margin: 30px 0;
 }
@@ -339,12 +337,11 @@ button.submit:hover {
   font-weight: bold;
   letter-spacing: 2px;
   transition: all .5s;
-  background-color: hsl(235, 57%, 12%);
+  background-color: hsl(17, 57%, 43%);
   color: white !important;
 }
 
 /* footer */
-
 footer {
   width: 100%;
   text-transform: uppercase;
